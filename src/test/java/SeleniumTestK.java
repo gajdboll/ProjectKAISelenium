@@ -5,7 +5,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertTrue;
+import java.util.concurrent.TimeUnit;
+
+import static org.testng.Assert.assertEquals;
 
 public class SeleniumTestK {
 
@@ -17,7 +19,9 @@ public class SeleniumTestK {
     public void beforeTest() {
       System.setProperty("webdriver.chrome.driver", "C:/driver/chromedriver.exe");
         driver = new ChromeDriver();
-       /* it's running the browser but is failing for some reason - investagate later   //
+ //implicit wait set up on the begining of the test  - we will avoid that idea in the next releases
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        /* it's running the browser but is failing for some reason - investagate later   //
        System.setProperty("webdriver.gecko.driver", "C:/driver/geckodriver.exe");
     driver = new FirefoxDriver(); */
        //Testing IE - it's working but the last closing method has to be changed//
@@ -30,20 +34,31 @@ public class SeleniumTestK {
         //DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
         // System.setProperty("webdriver.edge.driver", "C:/driver/operadriver.exe"); - works
        // driver = new EdgeDriver();
+        driver.manage().window().maximize();
+        driver.navigate().to("http://przyklady.javastart.pl/jpetstore/");
+       //below method redirects to the web too
+        // driver.get("http://przyklady.javastart.pl/jpetstore/");
+
     }
 
     @Test
     public void firstTest() {
-        driver.navigate().to("http://google.pl");
+        //Clicks on "Enter the Store" - First Page
+        driver.findElement(By.cssSelector("#Content a")).click();
 
-        driver.findElement(By.name("q")).sendKeys("JavaStart");
-        driver.findElement(By.name("q")).submit();
+        //Clicks on "Sign In" - SEC page
+        driver.findElement(By.cssSelector("#MenuContent a[href*='signonForm']")).click();
 
-        String pageTitle = driver.getTitle();
+        //Set up username and passord - Third page
+        driver.findElement(By.name("username")).sendKeys("NotExistingLogin");
+        driver.findElement(By.name("password")).sendKeys("NotProperPassword");
+        //Login
+        driver.findElement(By.name("signon")).click();
 
-        assertTrue(pageTitle.contains("JavaStart"));
+        //Assertion
+        assertEquals(driver.findElement(By.cssSelector("#Content ul[class='messages'] li")).getText(), "Invalid username or password. Signon failed.");
+
     }
-
     @AfterMethod
     public void afterTest() {
         driver.close();

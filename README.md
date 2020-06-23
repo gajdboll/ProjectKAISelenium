@@ -1,4 +1,5 @@
-# ProjectKAISelenium - Sprint One - 1.0
+# ProjectKAISelenium - Sprint One -Version 1.0
+
 
 ## First- basic test 
     checking Integrated functionality of Git with IntelliJ

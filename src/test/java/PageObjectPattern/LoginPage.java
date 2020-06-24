@@ -24,18 +24,18 @@ public class LoginPage {
         //for each contructor we add that line / check below
         PageFactory.initElements(driver, this);
     }
-    //enter login
-    public void enterLogin() {
+    //enter login > modify that method - it become more generic so it can be use across all the tests
+    public void enterLogin(String loginStr) {
         //WebElement login = driver.findElement(By.name("username")); that element and other is replaced by FindBy
         login.clear();// to be sure that field is empty
-        login.sendKeys("NotExistingLogin");
+        login.sendKeys(loginStr);
     }
 
-    //enter password
-    public void enterPassword() {
+    //enter password  > it become more generic so it can be use across all the tests
+    public void enterPassword(String pass) {
         //WebElement password = driver.findElement(By.name("password")); that element and other is replaced by FindBy
         password.clear();// to be sure that field is empty
-        password.sendKeys("NotProperPassword");
+        password.sendKeys(pass);
     }
 
     //click Login button after all credentials are entered

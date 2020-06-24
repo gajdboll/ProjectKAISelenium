@@ -39,15 +39,11 @@ public class SeleniumTestK {
         // driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.navigate().to("http://przyklady.javastart.pl/jpetstore/");
-        //below method redirects to the web too
-        // driver.get("http://przyklady.javastart.pl/jpetstore/");
-
-    }
+        }
 
     @Test
     public void firstTest() {
         //Clicks on "Enter the Store" - First Page
-        //this time we use our POP class
         EnterStore enterStore = new EnterStore(driver);
         enterStore.clickOnEnterStoreLink();
 
@@ -57,8 +53,8 @@ public class SeleniumTestK {
 
         //Set up username and password and then Login- Third page
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterLogin();
-        loginPage.enterPassword();
+        loginPage.enterLogin("Invalid Login");
+        loginPage.enterPassword("Invalid Password");
         loginPage.clickLoginBtn();
         //we will use that variable inside the assertion - methos d could be easly used inside the assertion but it is all about good practices
         String warningText = loginPage.messageValidation();

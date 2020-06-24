@@ -16,6 +16,7 @@ public class LoginPage {
     @FindBy(css = "#Content ul[class='messages'] li")
     private WebElement messageAfterLogin;
 
+
     private WebDriver driver;
 
     //constructor of that page
@@ -51,5 +52,6 @@ public class LoginPage {
 
         return messageAfterLogin.getText();
     }
+
 }
 

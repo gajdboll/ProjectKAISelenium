@@ -1,4 +1,5 @@
 import PageObjectPattern.EnterStore;
+import PageObjectPattern.FooterSignInPage;
 import PageObjectPattern.LoginPage;
 import PageObjectPattern.SignInPageMainPage;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 public class SeleniumTestK {
 
@@ -62,6 +64,30 @@ public class SeleniumTestK {
         assertEquals(warningText, "Invalid username or password. Signon failed.");
 
     }
+    @Test
+    public void secTest() {
+        //Clicks on "Enter the Store" - First Page
+        EnterStore enterStore = new EnterStore(driver);
+        enterStore.clickOnEnterStoreLink();
+
+        //Clicks on "Sign In" - SEC page - this time we use our POP class
+        SignInPageMainPage signInPageMainPage = new SignInPageMainPage(driver);
+        signInPageMainPage.clickOnSignInLink();
+
+        //Set up username and password and then Login- Third page
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.enterLogin("j2ee");
+        loginPage.enterPassword("j2ee");
+        loginPage.clickLoginBtn();
+        //we will use that variable inside the assertion - method d could be easly used inside the assertion but it is all about good practices
+        //new class instantiation
+        FooterSignInPage footerSignInPage = new FooterSignInPage(driver);
+        //Assertion
+        assertTrue(footerSignInPage.existingOfBannerfterLogin());
+        System.out.println(footerSignInPage.existingOfBannerfterLogin());
+    }
+
+
 
     @AfterMethod
     public void afterTest() {

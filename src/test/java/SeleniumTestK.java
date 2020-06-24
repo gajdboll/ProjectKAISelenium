@@ -60,9 +60,10 @@ public class SeleniumTestK {
         loginPage.enterLogin();
         loginPage.enterPassword();
         loginPage.clickLoginBtn();
-
+        //we will use that variable inside the assertion - methos d could be easly used inside the assertion but it is all about good practices
+        String warningText = loginPage.messageValidation();
         //Assertion
-        assertEquals(loginPage.messageValidation(), "Invalid username or password. Signon failed.");
+        assertEquals(warningText, "Invalid username or password. Signon failed.");
 
     }
 

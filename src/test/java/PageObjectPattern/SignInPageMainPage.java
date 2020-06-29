@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class SignInPageMainPage {
     @FindBy(css = "#MenuContent a[href*='signonForm']")
     private WebElement signInLink;
+    @FindBy(xpath = "//img[@src='../images/sm_fish.gif']")
+    private WebElement quickLinFish;
 
     private WebDriver driver;
     //constructor of that page
@@ -20,5 +22,9 @@ public class SignInPageMainPage {
        //that elements is replaced with @FindBy
         // WebElement signInLink= driver.findElement(By.cssSelector("#MenuContent a[href*='signonForm']"));
         signInLink.click();
+    }
+    //new method - top wuick links - FISH
+    public void clickOnQuickLinkFish(){
+        quickLinFish.click();
     }
 }

@@ -52,6 +52,8 @@ public class LoginPage {
 
         return messageAfterLogin.getText();
     }
+    public String meesageAfterCheckoutWithNoLogin(){
+        return messageAfterLogin.getText();
+    }
 
 }
-

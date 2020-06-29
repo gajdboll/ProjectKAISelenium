@@ -7,14 +7,12 @@ import static org.testng.Assert.assertEquals;
 
 public class SuccessfulChechoutFish extends TestBase{
     /*
-    Stwórz nową klasę testową, która będzie rozszerzać klasę TestBase.
-    Przejdź do strony głównej sklepu.
-    Przejdź do podstrony rybek (Fish).
-    Kliknij w ID rybki Angel Fish.
-    Dodaj Small Angelfish do koszyka.
-    Kliknij w przycisk Proceed to checkout.
-    Potwierdź, że nastąpiło przekierowanie do strony logowania
-    i wyświetlił się komunikat You must sign on before attempting to check out.*/
+    1.Create Additional test case - Start from the same page (EnterStore page)
+    2. Go to Main page (Sign In Page) and click on FISH quicklink (top of the page)
+    3. On next page Click o Fish IdOn next page Add Large AngelFish to the basket
+    4. On next Page - leave the number the same and simply checkout
+    5. On the next page (Login Page) verify the text in top left corner of the page
+   */
     String expectedMessage = "You must sign on before attempting to check out. Please sign on and try checking out again.";
 
     @Test

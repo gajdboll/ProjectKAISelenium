@@ -2,7 +2,8 @@
 
 
 ## Assignment - create addtional test to practise techniques knows already
-##TASK:
+## TASK:
+
 1.Create Additional test case - Start from the same page (EnterStore page)
 
 2. Go to Main page (Sign In Page) and click on FISH quicklink (top of the page)

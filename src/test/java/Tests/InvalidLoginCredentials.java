@@ -7,25 +7,20 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-// rename that Class with actual name what that test with verify (easy to understand)
-//from SeleniumTestK to Invalid Login
 public class InvalidLoginCredentials extends TestBase{
 
-
-
     @Test
-    // rename that test with actual name what that test with verify (easy to understand)
     public void incorrectCredentialsInvalidLogin() {
         //Clicks on "Enter the Store" - First Page
-        EnterStore enterStore = new EnterStore(driver);
+        EnterStore enterStore = new EnterStore();//that (driver);can be removed after DriverManger Deployment
         enterStore.clickOnEnterStoreLink();
 
         //Clicks on "Sign In" - SEC page - this time we use our POP class
-        SignInPageMainPage signInPageMainPage = new SignInPageMainPage(driver);
+        SignInPageMainPage signInPageMainPage = new SignInPageMainPage();//that (driver);can be removed after DriverManger Deployment
         signInPageMainPage.clickOnSignInLink();
 
         //Set up username and password and then Login- Third page
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage();//that (driver);can be removed after DriverManger Deployment
         loginPage.enterLogin("Invalid Login");
         loginPage.enterPassword("Invalid Password");
         loginPage.clickLoginBtn();

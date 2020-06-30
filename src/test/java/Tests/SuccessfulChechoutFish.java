@@ -18,23 +18,23 @@ public class SuccessfulChechoutFish extends TestBase{
     @Test
     public void youMustSignInBeforeCheckoutMessage(){
 //enterstore page -> SignIn page
-        EnterStore enterStore =new EnterStore(driver);
+        EnterStore enterStore =new EnterStore();//that (driver);can be removed after DriverManger Deployment
         enterStore.clickOnEnterStoreLink();
 //SignInPage -> FishProduct
-        SignInPageMainPage signInPageMainPage = new SignInPageMainPage(driver);
+        SignInPageMainPage signInPageMainPage = new SignInPageMainPage();//that (driver);can be removed after DriverManger Deployment
         signInPageMainPage.clickOnQuickLinkFish();
 //FisfPage -> AngelFishPage
-        FishProductPage fishProductPage = new FishProductPage(driver);
+        FishProductPage fishProductPage = new FishProductPage();//that (driver);can be removed after DriverManger Deployment
         System.out.println(fishProductPage.angelFishText());
         fishProductPage.clickOnAngelFishProduct();
         //Angelfish -> CheckoutPage
-        AngelFishPage angelFishPage = new AngelFishPage(driver);
+        AngelFishPage angelFishPage = new AngelFishPage();//that (driver);can be removed after DriverManger Deployment
         angelFishPage.clickOnLargeAngelFish();
         //Checkout -> Sign In page
-        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        CheckoutPage checkoutPage = new CheckoutPage();//that (driver);can be removed after DriverManger Deployment
         checkoutPage.clickOnCheckOutBtn();
         //Sign in page & validation
-        LoginPage loginPage= new LoginPage(driver);
+        LoginPage loginPage= new LoginPage();//that (driver);can be removed after DriverManger Deployment
         String checkoutMessage =loginPage.meesageAfterCheckoutWithNoLogin();
 
     assertEquals(checkoutMessage,expectedMessage);

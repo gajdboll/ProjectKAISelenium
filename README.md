@@ -14,6 +14,7 @@
 
 5. On the next page (Login Page) verify the text in top left corner of the page
 
+
 For that assignment - we need to create 3 additional Page Classes and one additional Test Class (with the test)
 
 Try do it yourself -> name classes the way you want - but make sure that

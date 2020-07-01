@@ -1,10 +1,10 @@
 package PageObjectPattern;
 
-import org.openqa.selenium.WebDriver;
+import driver.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+// In each page constructor we can remove  this.driver = driver; & replace driver with getDriver from DriverManager
 public class LoginPage {
     //all the elemenents are replacedwith @FindBy annotations so elements are searched only once
     @FindBy(name = "username")
@@ -17,13 +17,12 @@ public class LoginPage {
     private WebElement messageAfterLogin;
 
 
-    private WebDriver driver;
+    // private WebDriver driver;  -- it can be remowed too cause we are getting driver from Driver Manager
 
-    //constructor of that page
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        public LoginPage(){//that driver can be removed too(WebDriver driver)
+            // this.driver =driver;
         //for each contructor we add that line / check below
-        PageFactory.initElements(driver, this);
+            PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
     //enter login > modify that method - it become more generic so it can be use across all the tests
     public void enterLogin(String loginStr) {
@@ -52,6 +51,8 @@ public class LoginPage {
 
         return messageAfterLogin.getText();
     }
+    public String meesageAfterCheckoutWithNoLogin(){
+        return messageAfterLogin.getText();
+    }
 
 }
-

@@ -4,6 +4,8 @@ import driver.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import wait.WaitForElement;
+
 // In each page constructor we can remove  this.driver = driver; & replace driver with getDriver from DriverManager
 public class LoginPage {
     //all the elemenents are replacedwith @FindBy annotations so elements are searched only once
@@ -26,7 +28,8 @@ public class LoginPage {
     }
     //enter login > modify that method - it become more generic so it can be use across all the tests
     public void enterLogin(String loginStr) {
-        //WebElement login = driver.findElement(By.name("username")); that element and other is replaced by FindBy
+        WaitForElement.waitUntilElementIsVisible(login);
+
         login.clear();// to be sure that field is empty
         login.sendKeys(loginStr);
     }

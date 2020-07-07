@@ -4,6 +4,7 @@ import driver.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import wait.WaitForElement;
 
 public class AngelFishPage {
 
@@ -18,7 +19,8 @@ public class AngelFishPage {
              PageFactory.initElements(DriverManager.getWebDriver(),this);
         }
         public void clickOnLargeAngelFish(){
-            largeAngelFish.click();
+            WaitForElement.waitUntilElementIsClickable(largeAngelFish);
+             largeAngelFish.click();
         }
     }
 

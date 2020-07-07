@@ -4,6 +4,7 @@ import driver.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import wait.WaitForElement;
 
 public class FooterSignInPage {
     // In each page constructor we can remove  this.driver = driver; & replace driver with getDriver from DriverManager
@@ -18,6 +19,7 @@ public class FooterSignInPage {
     }
 
     public boolean existingOfBannerfterLogin() {
+        WaitForElement.waitUntilElementIsVisible(footerAfterLogin);
         return footerAfterLogin.isDisplayed();
     }
 }

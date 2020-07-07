@@ -1,22 +1,20 @@
-# ProjectKAISelenium - Sprint One -Version 1.3
+# ProjectKAISelenium - Sprint One -Version 1.6
 
 
-## PageFactory for creating code more generic and usable - no elements duplications 
+## Replacing Implicit wait with EXPLICIT WAITS 
 
-Add extra test (positive) and create additional web class /instance(object)branch Version 1.3
+Implicit wait from DriverUtilities has been removed
+Explicit Wait package called wait with WaitFOrElement class (WebDriverWait class)
+Tha class contains :
+- private static WebDriverWait getWebDriverWait() {
+        return new WebDriverWait(DriverManager.getWebDriver(), 10);    }
+-public static void waitUntilElementIsVisible(WebElement element){
+-public static void waitUntilElementIsClickable(WebElement element){
+-public static WebElement waitUntilPresenceOfElementLocated(By by)  
 
-
-
-resolve the issue of creating additional POP classes when cust. is back to the same page (
-overload page issue/initiation of elements issue) → raise a SIR(resolution in Sprint 2)
-
-
-
-The best use of it is to attach it into web page contractor. more info about PageFactory & POP: https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/PageFactory.html
-
-
-
-
+// method above is used when DOM is reloaded again StaleElementReferenceException occurs - the same element can't be found so that method help with that Excetion
+     
+       
 
 ### ORIGINAL FRAMEWORK - KAI
 

@@ -1,42 +1,60 @@
-<<<<<<< Version1.5
-# ProjectKAISelenium - Sprint One -Version 1.5
+ Version1.7
+# ProjectKAISelenium - Sprint One -Version 1.7
 
 
-Singleton Design Pattern - more info:
+##  LOG4J Logging System
 
-https://sourcemaking.com/design_patterns/singleton
+Acceptance Criteria
 
-The idea of creating Singleton Pattern is to create one instance of the object, we use different techniques like encapsulation (we hide driver) but we give the access globally
+add a dependency to the pom file
 
-## Steps
+<dependency>
+     <groupId>org.apache.logging.log4j</groupId>
+     <artifactId>log4j-core</artifactId>
+     <version>2.10.0</version>
+ </dependency>
 
-- Create Class DriverManager in the new Package (called a driver) - with an empty private constructor.
+In the project localisation: scr/main/resources create a file log4j2.xml and paste that content to it
 
-- Create static private WebDriver
+<?xml version="1.0" encoding="UTF-8"?>
+ <Configuration status="INFO">
+     <Appenders>
+         <Console name="console" target="SYSTEM_OUT">
+             <PatternLayout
+                     pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %C - %msg%n" />
+         </Console>
+     </Appenders>
+     <Loggers>
+         <Root level="debug" additivity="false">
+             <AppenderRef ref="console" />
+         </Root>
+     </Loggers>
+ </Configuration>
 
-- create a static method allowing you to  get a driver (call it getDriver())and include those lines of the code:  if (driver == null) {         System.setProperty("webdriver.chrome.driver", "C:/driver/chromedriver.exe");        
-driver = new ChromeDriver();    }   
-return driver;}
+ src/main/resourcessrc/main/resourc
 
-- use that new static method and call it in TestBase class and replace driver & location of the driver with a new method by calling: DriverManager.getDriver()
+If we want to use our logger and all the methods we need to start with (that's how we call for logger):private Logger logger = LogManager.getRootLogger();
 
-- remove driver from each Page Object Pattern Class from a constructor as well as:// this.driver = driver;In the Pagefactory - replace the driver with new getDriver() similar to above
+Logger have 3 methods:
 
-- remove a driver from Tests where an object is created in the same driver, package create an additional class called DrverUtilities and will contain 2 methods that will replace a bit of code from @BeforeMethod method from TestBase as well as @AfterMethos method from the same class
+logger.info("Information log");
+ logger.warn("warning log");
+ logger.error("error log");
 
-- two methods in the driverUtilieties are called WebConfiguration and will contain basic configuration:
-DriverManager.getWebDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-DriverManager.getWebDriver().manage().window().maximize();and navigateToPage(String URL ) with codeDriverManager.getWebDriver().navigate().to(URL); 
+!!!Create Logger in each POP class and attach information log inside each method to get more information when a certain method finishes !!!
 
-- those two methods replace some code in TestBase Class - and make that code smaller and clearer
+more information about architecture etc. 
 
+https://logging.apache.org/log4j/2.0/manual/architecture.html
 
+Official Log4j web
 
+https://logging.apache.org/log4j/2.x/
 
-The Test should be stored in master as well as Version1.5 branch on the global repository (remote)
+The Test should be stored in master as well as Version1.7 the branch on the global repository (remote)
 
 The master branch should always contain the latest version of the project
-=======
+
 
 ### ORIGINAL FRAMEWORK - KAI
 

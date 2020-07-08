@@ -16,6 +16,10 @@ Tha class contains :
 - public static WebElement waitUntilPresenceOfElementLocated(By by)  
 
 // method above is used when DOM is reloaded again StaleElementReferenceException occurs - the same element can't be found so that method help with that Excetion
+
+
+
+
      
        
 

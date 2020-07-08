@@ -1,6 +1,8 @@
 package PageObjectPattern;
 
 import driver.DriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -18,20 +20,16 @@ public class LoginPage {
     @FindBy(css = "#Content ul[class='messages'] li")
     private WebElement messageAfterLogin;
 
-
-    // private WebDriver driver;  -- it can be remowed too cause we are getting driver from Driver Manager
-
-        public LoginPage(){//that driver can be removed too(WebDriver driver)
-            // this.driver =driver;
-        //for each contructor we add that line / check below
-            PageFactory.initElements(DriverManager.getWebDriver(), this);
+    private Logger logger = LogManager.getRootLogger();
+    public LoginPage(){//that driver can be removed too(WebDriver driver)
+          PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
     //enter login > modify that method - it become more generic so it can be use across all the tests
     public void enterLogin(String loginStr) {
         WaitForElement.waitUntilElementIsVisible(login);
-
         login.clear();// to be sure that field is empty
         login.sendKeys(loginStr);
+        logger.info("Typed into User Name Field {}", loginStr);
     }
 
     //enter password  > it become more generic so it can be use across all the tests
@@ -39,19 +37,18 @@ public class LoginPage {
         //WebElement password = driver.findElement(By.name("password")); that element and other is replaced by FindBy
         password.clear();// to be sure that field is empty
         password.sendKeys(pass);
+        logger.info("Typed into Password Field {}", pass);
     }
 
     //click Login button after all credentials are entered
     public void clickLoginBtn() {
-        //WebElement loginBtn = driver.findElement(By.name("signon")); that element and other is replaced by FindBy
         loginBtn.click();
+        logger.info("Clicked on Login Button");
     }
 
     //message occurs after login and is validated
     public String messageValidation() {
-       //that element and other is replaced by FindBy
-        // WebElement messageAfterLogin = driver.findElement(By.cssSelector("#Content ul[class='messages'] li"));
-
+        logger.info("Warning text is : {}", messageAfterLogin.getText());
         return messageAfterLogin.getText();
     }
     public String meesageAfterCheckoutWithNoLogin(){

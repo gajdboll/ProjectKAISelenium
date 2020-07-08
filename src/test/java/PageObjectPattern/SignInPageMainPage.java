@@ -1,6 +1,8 @@
 package PageObjectPattern;
 
 import driver.DriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,14 +15,15 @@ public class SignInPageMainPage {
     @FindBy(xpath = "//img[@src='../images/sm_fish.gif']")
     private WebElement quickLinFish;
 
+   private Logger logger = LogManager.getRootLogger();
     public SignInPageMainPage(){//that driver can be removed too(WebDriver driver)
-        // this.driver =driver;
-        //for each contructor we add that line / check below
         PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
     public void clickOnSignInLink() {
         WaitForElement.waitUntilElementIsClickable(signInLink);
          signInLink.click();
+         logger.info("Clicked On Sign Link");
+
     }
     //new method - top wuick links - FISH
     public void clickOnQuickLinkFish(){

@@ -19,7 +19,7 @@ Tha class contains :
 
 
 
-
+Make changes to all the POP classes - changes should be made inside the methods where the wait for the element is required
      
        
 

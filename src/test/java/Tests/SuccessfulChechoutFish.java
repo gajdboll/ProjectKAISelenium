@@ -18,7 +18,6 @@ public class SuccessfulChechoutFish extends TestBase{
     @Test
     public void youMustSignInBeforeCheckoutMessage(){
 //enterstore page -> SignIn page
-
         EnterStore enterStore =new EnterStore();//that (driver);can be removed after DriverManger Deployment
         enterStore.clickOnEnterStoreLink();
 //SignInPage -> FishProduct
@@ -35,7 +34,7 @@ public class SuccessfulChechoutFish extends TestBase{
         AngelFishPage angelFishPage = new AngelFishPage();//that (driver);can be removed after DriverManger Deployment
         angelFishPage.clickOnLargeAngelFish();
         //Checkout -> Sign In page
-        
+
         CheckoutPage checkoutPage = new CheckoutPage();//that (driver);can be removed after DriverManger Deployment
         checkoutPage.clickOnCheckOutBtn();
         //Sign in page & validation

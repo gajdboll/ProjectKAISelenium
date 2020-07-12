@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import wait.WaitForElement;
 
 public class EnterStore {
-    @FindBy(css = "#Content a")
+    @FindBy(xpath = "//*[@id='Content']/p[1]/a")
     private WebElement enterStoreLink;
 
    private Logger logger = LogManager.getRootLogger();

@@ -12,20 +12,20 @@ public class BrowserFactory {
     public static WebDriver getBrowser(BrowserType browserType) {
         switch (browserType) {
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:/driver/chromedriver.exe");
                 return new ChromeDriver();
             case FIREFOX:
-                System.setProperty("webdriver.gecko.driver", "C:/drivers/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "C:/driver/geckodriver.exe");
                 return new FirefoxDriver();
             case IE:
-                System.setProperty("webdriver.ie.driver", "C:/drivers/IEDriverServer.exe");
-                return new InternetExplorerDriver();
+                System.setProperty("webdriver.ie.driver", "C:/driver/IEDriverServer.exe");
+                return new InternetExplorerDriver();//WORK ON THAT BROWSER
             case OPERA:
                 System.setProperty("webdriver.opera.driver", "C:/driver/operadriver.exe");
                 return new OperaDriver();
             case EDGE:
                 //DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
-                 System.setProperty("webdriver.edge.driver", "C:/driver/operadriver.exe");
+                 System.setProperty("webdriver.edge.driver", "C:/driver/msedgedriver.exe");
                 return new EdgeDriver();
             default:
                 throw new IllegalStateException("Unknown browser type! Please check your configuration");

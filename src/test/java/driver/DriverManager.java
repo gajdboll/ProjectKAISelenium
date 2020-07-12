@@ -5,7 +5,7 @@ import driver.manager.BrowserType;
 import org.openqa.selenium.WebDriver;
 
 public class DriverManager {
-    private static final BrowserType BROWSER_TYPE = BrowserType.FIREFOX; //that s the field where we select the brwoser
+    private static final BrowserType BROWSER_TYPE = BrowserType.IE; //that s the field where we select the browsers
     private static WebDriver driver;
 
     private DriverManager() {
@@ -14,7 +14,7 @@ public class DriverManager {
     public static WebDriver getWebDriver() {
         //we change that class and tha method if we want to use that method generly across all the browsers
         if (driver == null) {
-           //we cahnge tha code below to make more universal
+           //we change tha code below to make more universal
             // driver = BrowserFactory.getBrowser(BrowserType.FIREFOX);
         //new code below
             driver = BrowserFactory.getBrowser(BROWSER_TYPE);
@@ -40,7 +40,7 @@ public class DriverManager {
             }
             driver = null;
         }
-        /* prevoois versio of the coce
+        /* previous version of the code
 
        driver.close();//close the tab
         driver.quit();//close the browser

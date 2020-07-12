@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment="Fluent Interface">
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/AngelFishPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/AngelFishPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/EnterStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/EnterStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FishProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FishProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FooterSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FooterSignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/SignInPageMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/SignInPageMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InvalidLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InvalidLoginCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SuccessfulChechoutFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/SuccessfulChechoutFish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ValidLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ValidLoginCredentials.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Version1.9" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eYUV9FAv1WmlYP6YQAKlICjlTG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="local history&#9;null&#9;null" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\SOGETI\KAI Project\K Kris\ProjectK1Selenium\src\test\java" />
+      <recent name="F:\SOGETI\KAI Project\K Kris\ProjectK1Selenium\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ProjectK1Selenium" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvalidLoginCredentials.incorrectCredentialsInvalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.InvalidLoginCredentials" />
+      <option name="METHOD_NAME" value="incorrectCredentialsInvalidLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTestsK.myFirstTest" type="TestNG" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTestsK" />
+      <option name="METHOD_NAME" value="myFirstTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTestsK.myFirstTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ProjectKOneSelenium" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTestsK" />
+      <option name="METHOD_NAME" value="myFirstTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="SuccessfulChechoutFish" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SuccessfulChechoutFish" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SuccessfulChechoutFish" />
+      <option name="METHOD_NAME" value="youMustSignInBeforeCheckoutMessage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.SuccessfulChechoutFish" />
+      <option name="METHOD_NAME" value="youMustSignInBeforeCheckoutMessage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidLoginCredentials.positiveLoginTOTheStore" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ValidLoginCredentials" />
+      <option name="METHOD_NAME" value="positiveLoginTOTheStore" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.SeleniumTestsK.myFirstTest" />
+      <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
+      <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
+      <item itemvalue="TestNG.SuccessfulChechoutFish" />
+      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" />
+      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" />
+        <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" />
+        <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
+        <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
+        <item itemvalue="TestNG.SuccessfulChechoutFish" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment="" />
+      <created>1592558321736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592558321736</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First basic test&#10;&#10;Testing hot to commit and push the project to git">
+      <created>1592859888932</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592859888932</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First basic test&#10;&#10;Testing hot to commit and push the project to git">
+      <created>1592944000546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592944000546</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First basic test&#10;&#10;&#10;With Eclipse export">
+      <created>1592945068689</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592945068689</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First basic test&#10;&#10;&#10;With Eclipse export">
+      <created>1592945494599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592945494599</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Introduction to POP &#10;- create first POP class &#10;CTRL+ALT+L   -&gt; code allign">
+      <created>1593028413330</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593028413330</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Page Factory &amp; initElement()">
+      <created>1593032890523</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593032890523</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Page Factory &amp; initElement()">
+      <created>1593033369939</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593033369939</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Page Factory &amp; initElement()- I ve changed methods so they are more generic">
+      <created>1593034142120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593034142120</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Page Factory &amp; initElement()- created additional test (positive one)&#10;and extra class (footer)">
+      <created>1593035690072</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593035690072</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Page Factory &amp; initElement()- created additional test (positive one)&#10;and extra class (footer)">
+      <created>1593036186245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593036186245</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Page Factory &amp; initElement()- created additional test (positive one)&#10;and extra class (footer)">
+      <created>1593036341015</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593036341015</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Extra package with 2 tests created - Test Base class contains beginning and the end of the test">
+      <created>1593455193428</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593455193429</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Extra package with 2 tests created - Test Base class contains beginning and the end of the test">
+      <created>1593455214278</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593455214279</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Additional 3rd test completed">
+      <created>1593465664923</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593465664923</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Additional 3rd test completed - english translation of the task">
+      <created>1593466085368</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593466085368</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implementation of Singleton &#10;two classes Have been created : &#10;- DriverManger(contains driver)&#10;- DriverUtils (contains all the main web set up)">
+      <created>1593548763424</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593548763424</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Extra package with Explicit Wait and wait methods&#10;&#10;Implicit wait replaced BY explicit waits">
+      <created>1594159045801</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594159045801</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Log4J  - oging System">
+      <created>1594243262006</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594243262006</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Trying to make browser selection">
+      <created>1594501824283</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1594501824283</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Trying to make browser selection">
+      <created>1594564403820</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1594564403820</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fluent Interface">
+      <created>1594587172856</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1594587172856</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="First basic test&#10;&#10;Testing hot to commit and push the project to git" />
+    <MESSAGE value="First basic test&#10;&#10;&#10;With Eclipse export" />
+    <MESSAGE value="Introduction to POP &#10;- create first POP class &#10;CTRL+ALT+L   -&gt; code allign" />
+    <MESSAGE value="Page Factory &amp; initElement()" />
+    <MESSAGE value="Page Factory &amp; initElement()- I ve changed methods so they are more generic" />
+    <MESSAGE value="Page Factory &amp; initElement()- created additional test (positive one)&#10;and extra class (footer)" />
+    <MESSAGE value="Extra package with 2 tests created - Test Base class contains beginning and the end of the test" />
+    <MESSAGE value="Additional 3rd test completed" />
+    <MESSAGE value="Additional 3rd test completed - english translation of the task" />
+    <MESSAGE value="Implementation of Singleton &#10;two classes Have been created : &#10;- DriverManger(contains driver)&#10;- DriverUtils (contains all the main web set up)" />
+    <MESSAGE value="Extra package with Explicit Wait and wait methods&#10;&#10;Implicit wait replaced BY explicit waits" />
+    <MESSAGE value="Log4J  - oging System" />
+    <MESSAGE value="Trying to make browser selection" />
+    <MESSAGE value="Fluent Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fluent Interface" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594545876864">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1594545876864" />
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1594587168705">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594587168705" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1594587540182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1594587540182" />
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1594587090561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594587090561" />
+    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1594587090560">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594587090560" />
+    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1594587090560">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594587090560" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1594587090561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594587090561" />
+    <state width="1323" height="212" key="GridCell.Tab.1.bottom" timestamp="1594498483740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
+    <state width="1323" height="212" key="GridCell.Tab.1.center" timestamp="1594498483740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
+    <state width="1323" height="212" key="GridCell.Tab.1.left" timestamp="1594498483740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
+    <state width="1323" height="212" key="GridCell.Tab.1.right" timestamp="1594498483740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="212" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
+    <state x="54" y="3" key="SettingsEditor" timestamp="1594498753780">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="54" y="3" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594498753780" />
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1594564407153">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594564407153" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594589120241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1594589120241" />
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594587540157">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1594587540157" />
+    <state x="385" y="152" key="git4idea.merge.GitPullDialog" timestamp="1594587431339">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="385" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1594587431339" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1594582713239">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1594582713239" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="ProjectK1Selenium" type="b2602c69:ProjectViewProjectNode" />
+        <item name="ProjectK1Selenium" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

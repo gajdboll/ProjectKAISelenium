@@ -19,14 +19,15 @@ public class SignInPageMainPage {
     public SignInPageMainPage(){//that driver can be removed too(WebDriver driver)
         PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
-    public void clickOnSignInLink() {
+    public LoginPage clickOnSignInLink() {//void is replaced with Login page - so we are expecting LoginPage
         WaitForElement.waitUntilElementIsClickable(signInLink);
          signInLink.click();
          logger.info("Clicked On Sign Link");
-
+    return new LoginPage();
     }
-    //new method - top wuick links - FISH
-    public void clickOnQuickLinkFish(){
+    //void is replaced with FidgPage - cause we will move to that page
+    public FishProductPage clickOnQuickLinkFish(){
         quickLinFish.click();
+        return new FishProductPage();
     }
 }

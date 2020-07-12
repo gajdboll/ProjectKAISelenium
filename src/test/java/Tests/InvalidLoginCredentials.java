@@ -2,7 +2,6 @@ package Tests;
 
 import PageObjectPattern.EnterStore;
 import PageObjectPattern.LoginPage;
-import PageObjectPattern.SignInPageMainPage;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -11,6 +10,20 @@ public class InvalidLoginCredentials extends TestBase{
 
     @Test
     public void incorrectCredentialsInvalidLogin() {
+        //new way of presenting code - Fluent way
+        EnterStore enterStore = new EnterStore();
+        //navigation through the pages
+        enterStore.clickOnEnterStoreLink()
+                .clickOnSignInLink()
+                .enterLogin("invalid login")
+                .enterPassword("invalid pass")
+                .clickLoginBtn();
+        LoginPage loginPage = new LoginPage();
+        //Assertion
+        assertEquals(loginPage.messageValidation(), "Invalid username or password. Signon failed.");
+
+
+        /*old way of presenting code
         //Clicks on "Enter the Store" - First Page
         EnterStore enterStore = new EnterStore();//that (driver);can be removed after DriverManger Deployment
         enterStore.clickOnEnterStoreLink();
@@ -28,6 +41,6 @@ public class InvalidLoginCredentials extends TestBase{
         String warningText = loginPage.messageValidation();
         //Assertion
         assertEquals(warningText, "Invalid username or password. Signon failed.");
-
+*/
     }
    }

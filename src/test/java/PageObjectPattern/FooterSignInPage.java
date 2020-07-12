@@ -21,7 +21,8 @@ public class FooterSignInPage {
 
     public boolean existingOfBannerfterLogin() {
         WaitForElement.waitUntilElementIsVisible(footerAfterLogin);
-        logger.info("Returning status of banner after login: {}", footerAfterLogin.isDisplayed() );
-        return footerAfterLogin.isDisplayed();
+        boolean isDisplayed = footerAfterLogin.isDisplayed(); //that result method is saved in the variable cause need to be returned
+        logger.info("Returning status of banner after login: {}", isDisplayed);
+        return isDisplayed;
     }
 }

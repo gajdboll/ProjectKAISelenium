@@ -14,13 +14,14 @@ public class EnterStore {
 
    private Logger logger = LogManager.getRootLogger();
     public EnterStore(){//that driver can be removed too(WebDriver driver)
-     // this.driver =driver;
-        PageFactory.initElements(DriverManager.getWebDriver(), this);
+    PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
-    public void clickOnEnterStoreLink() {
+    //void is replaced with SignInPageMainPage cause we are moving to next page (SignInPageMainPage)
+    public SignInPageMainPage clickOnEnterStoreLink() {
+        //change the return type for next page
         WaitForElement.waitUntilElementIsClickable(enterStoreLink);
         enterStoreLink.click();
         logger.info("Clicked on Enter Store Link");
-
+    return new SignInPageMainPage();
     }
 }

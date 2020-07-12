@@ -23,10 +23,11 @@ public class FishProductPage {
         logger.info("The Angel Fish is {}", angelFish.getText());
         return angelFish.getText();
     }
-
-    public void clickOnAngelFishProduct() {
+//void is replaced with AngelFishPage cause we will move to that page
+    public AngelFishPage clickOnAngelFishProduct() {
         WaitForElement.waitUntilElementIsClickable(angelFish);
         angelFish.click();
         logger.info("Clicked on Angel Fish");
+        return new AngelFishPage();
     }
 }

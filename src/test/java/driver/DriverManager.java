@@ -5,7 +5,7 @@ import driver.manager.BrowserType;
 import org.openqa.selenium.WebDriver;
 
 public class DriverManager {
-    private static final BrowserType BROWSER_TYPE = BrowserType.IE; //that s the field where we select the browsers
+    private static final BrowserType BROWSER_TYPE = BrowserType.CHROME; //that s the field where we select the browsers
     private static WebDriver driver;
 
     private DriverManager() {

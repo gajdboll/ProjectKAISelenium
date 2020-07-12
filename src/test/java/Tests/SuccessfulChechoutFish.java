@@ -1,6 +1,6 @@
 package Tests;
 
-import PageObjectPattern.*;
+import PageObjectPattern.EnterStore;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -17,6 +17,17 @@ public class SuccessfulChechoutFish extends TestBase{
 
     @Test
     public void youMustSignInBeforeCheckoutMessage(){
+        //New way of presenting FluentWay
+        String messageValivdation = new EnterStore()
+        .clickOnEnterStoreLink()
+                .clickOnQuickLinkFish()
+                .clickOnAngelFishProduct()
+                .clickOnLargeAngelFish()
+                .clickOnCheckOutBtn()
+                .messageValidation();
+
+        assertEquals(messageValivdation,expectedMessage);
+ /*Old way of presenting test
 //enterstore page -> SignIn page
         EnterStore enterStore =new EnterStore();//that (driver);can be removed after DriverManger Deployment
         enterStore.clickOnEnterStoreLink();
@@ -39,10 +50,10 @@ public class SuccessfulChechoutFish extends TestBase{
         checkoutPage.clickOnCheckOutBtn();
         //Sign in page & validation
         LoginPage loginPage= new LoginPage();//that (driver);can be removed after DriverManger Deployment
-        String checkoutMessage =loginPage.meesageAfterCheckoutWithNoLogin();
+        String checkoutMessage =loginPage.messageValidation();
 
     assertEquals(checkoutMessage,expectedMessage);
 
-
+*/
     }
 }

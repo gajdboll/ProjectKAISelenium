@@ -18,9 +18,10 @@ public class CheckoutPage {
     public CheckoutPage(){//that driver can be removed too(WebDriver driver)
             PageFactory.initElements(DriverManager.getWebDriver(),this);
     }
-    public void clickOnCheckOutBtn(){
+    public LoginPage clickOnCheckOutBtn(){
         WaitForElement.waitUntilElementIsClickable(checkoutBtn);
         checkoutBtn.click();
     logger.info("Clicked on Check Out BTN");
+    return  new LoginPage();
     }
 }

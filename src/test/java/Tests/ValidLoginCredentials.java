@@ -1,12 +1,9 @@
 package Tests;
 
 import PageObjectPattern.EnterStore;
-import PageObjectPattern.FooterSignInPage;
-import PageObjectPattern.LoginPage;
-import PageObjectPattern.SignInPageMainPage;
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertTrue;
+import static org.testng.Assert.assertTrue;
 
 // rename that Class with actual name what that test with verify (easy to understand)
 //from SeleniumTestK to Invalid Login
@@ -15,6 +12,20 @@ public class ValidLoginCredentials extends TestBase{
     @Test
     // rename that test with actual name what that test with verify (easy to understand)
     public void positiveLoginTOTheStore() {
+//New Fluent Test
+        EnterStore enterstore = new EnterStore();
+        //we can assign response to the boolean variable
+        boolean isBannerAfterLoginDisplayed = enterstore
+                .clickOnEnterStoreLink()
+                .clickOnSignInLink()
+                .enterLogin("j2ee")
+               .enterPassword("j2ee")
+                .clickLoginBtn()
+                .existingOfBannerfterLogin();
+
+        assertTrue(isBannerAfterLoginDisplayed);
+
+        /*old code below
         //Clicks on "Enter the Store" - First Page
         EnterStore enterStore = new EnterStore();//that (driver);can be removed after DriverManger Deployment
         enterStore.clickOnEnterStoreLink();
@@ -33,6 +44,6 @@ public class ValidLoginCredentials extends TestBase{
         FooterSignInPage footerSignInPage = new FooterSignInPage();//that (driver);can be removed after DriverManger Deployment
         //Assertion
         assertTrue(footerSignInPage.existingOfBannerfterLogin());
-        System.out.println(footerSignInPage.existingOfBannerfterLogin());
+        System.out.println(footerSignInPage.existingOfBannerfterLogin());*/
     }
 }

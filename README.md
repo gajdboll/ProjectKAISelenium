@@ -1,7 +1,7 @@
  Version1.7
-# ProjectKAISelenium - Sprint One -Version 1.*
+# ProjectKAISelenium - Sprint One -Version 1.9
 
-## Version1.8 -Fluent Interface
+## Version1. - Fluent Interface
 
 Acceptance Criteria
 

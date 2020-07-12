@@ -97,9 +97,7 @@ This is a conventional issue and depends on our approach. In the code above, cal
 
 SummaryThanks to the fluid interface, the readability of our tests have increased further. It is a practice that over time also speeds up writing tests because individual actions combine into strings to form a coherent whole.
 
-The Test should be stored in master as well as Version1.9 the branch on the global repository (remote)
 
-The master branch should always contain the latest version of the project
 
 
 

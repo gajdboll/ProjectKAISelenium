@@ -1,11 +1,12 @@
-package Tests;
+package Tests.NavigationTests;
 
 import PageObjectPattern.EnterStore;
+import Tests.TestBase;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class SuccessfulChechoutFish extends TestBase{
+public class SuccessfulChechoutFish extends TestBase {
     /*
     1.Create Additional test case - Start from the same page (EnterStore page)
     2. Go to Main page (Sign In Page) and click on FISH quicklink (top of the page)

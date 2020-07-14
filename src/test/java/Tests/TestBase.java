@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import static navigation.ApplicationURLs.APPLICATION_URLS;
+
 public class TestBase {
 
     public WebDriver driver;
@@ -15,7 +17,8 @@ public class TestBase {
          DriverManager.getWebDriver();
 
         DriverUtilities.initialConfiguraiotn();
-        DriverUtilities.navigateToPage("http://przyklady.javastart.pl/jpetstore/");
+        //URL is replaced with final variable - imported from ApplicationUrls class
+        DriverUtilities.navigateToPage(APPLICATION_URLS);
     }
     @AfterMethod
     public void afterTest() {

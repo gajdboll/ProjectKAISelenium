@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment="Fluent Interface">
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/AngelFishPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/AngelFishPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/EnterStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/EnterStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FishProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FishProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FooterSignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/FooterSignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjectPattern/SignInPageMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjectPattern/SignInPageMainPage.java" afterDir="false" />
+    <list default="true" id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment=" Fluent Interface">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/NavigationTests/NavigationToInvalidLoginCredentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/navigation/ApplicationURLs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InvalidLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InvalidLoginCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SuccessfulChechoutFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/SuccessfulChechoutFish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SuccessfulChechoutFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/NavigationTests/SuccessfulChechoutFish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ValidLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ValidLoginCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/InvalidLoginCredentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/InvalidLoginCredentials.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/SuccessfulChechoutFish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/TestBase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -65,7 +64,7 @@
       <recent name="F:\SOGETI\KAI Project\K Kris\ProjectK1Selenium\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage">
+  <component name="RunManager" selected="TestNG.ValidLoginCredentials.positiveLoginTOTheStore">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -109,6 +108,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.InvalidLoginCredentials" />
+      <option name="METHOD_NAME" value="incorrectCredentialsInvalidLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationToInvalidLoginCredentials.incorrectCredentialsInvalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.NavigationTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.NavigationTests.NavigationToInvalidLoginCredentials" />
       <option name="METHOD_NAME" value="incorrectCredentialsInvalidLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -170,12 +188,12 @@
       <module name="ProjectKOneSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Tests.NavigationTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SuccessfulChechoutFish" />
+      <option name="PACKAGE_NAME" value="Tests.NavigationTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.NavigationTests.SuccessfulChechoutFish" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
@@ -207,12 +225,12 @@
       <module name="ProjectKOneSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Tests.NavigationTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SuccessfulChechoutFish" />
+      <option name="MAIN_CLASS_NAME" value="Tests.NavigationTests.SuccessfulChechoutFish" />
       <option name="METHOD_NAME" value="youMustSignInBeforeCheckoutMessage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -261,19 +279,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.SeleniumTestsK.myFirstTest" />
+      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (2)" />
+      <item itemvalue="TestNG.SuccessfulChechoutFish" />
+      <item itemvalue="TestNG.NavigationToInvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
       <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
       <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
-      <item itemvalue="TestNG.SuccessfulChechoutFish" />
-      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" />
-      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" />
-        <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" />
-        <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
         <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
+        <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
         <item itemvalue="TestNG.SuccessfulChechoutFish" />
+        <item itemvalue="TestNG.NavigationToInvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
+        <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -435,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594587172856</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="changes reverted - all working - before Fluent Interface">
+      <created>1594589267754</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1594589267754</updated>
+    </task>
+    <task id="LOCAL-00023" summary=" Fluent Interface">
+      <created>1594589384234</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1594589384234</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,61 +499,67 @@
     <MESSAGE value="Log4J  - oging System" />
     <MESSAGE value="Trying to make browser selection" />
     <MESSAGE value="Fluent Interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fluent Interface" />
+    <MESSAGE value="changes reverted - all working - before Fluent Interface" />
+    <MESSAGE value=" Fluent Interface" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Fluent Interface" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="331" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594760822493">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="331" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1594760822493" />
     <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594545876864">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1594545876864" />
-    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1594587168705">
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1594589380731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594587168705" />
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594589380731" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1594587540182">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1594587540182" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1594587090561">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1594761684293">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594587090561" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1594587090560">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594761684293" />
+    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1594761684292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594587090560" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1594587090560">
+    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594761684292" />
+    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1594761684292">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594587090560" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1594587090561">
+    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594761684292" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1594761684293">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594587090561" />
-    <state width="1323" height="212" key="GridCell.Tab.1.bottom" timestamp="1594498483740">
+    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594761684293" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1594589201203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
-    <state width="1323" height="212" key="GridCell.Tab.1.center" timestamp="1594498483740">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594589201203" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1594589201202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
-    <state width="1323" height="212" key="GridCell.Tab.1.left" timestamp="1594498483740">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594589201202" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1594589201202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
-    <state width="1323" height="212" key="GridCell.Tab.1.right" timestamp="1594498483740">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594589201202" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1594589201203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594498483740" />
-    <state x="54" y="3" key="SettingsEditor" timestamp="1594498753780">
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594589201203" />
+    <state x="54" y="3" key="SettingsEditor" timestamp="1594668394848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="54" y="3" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594498753780" />
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1594564407153">
+    <state x="54" y="3" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594668394848" />
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1594589424472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594564407153" />
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594589424472" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594589120241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

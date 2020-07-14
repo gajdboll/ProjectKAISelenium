@@ -3,9 +3,7 @@
 
 ## Version1.9 - Fluent Interface
 
-Acceptance Criteria
-
-Acceptance Criteria
+##Acceptance Criteria
 
 The Fluent Interface is a part of the code-building concept based on the principle that code formulates complex full sentences, making it more understandable. The creator of this idea is Martin Folwer (creator of Page Object Pattern). Using the Fluent Interface approach, the code begins to build a specific language for us in the literature referred to as DSL. Language-specific for the domain. And so for the usual technical specification, we could understand the SQL query in the form:
 

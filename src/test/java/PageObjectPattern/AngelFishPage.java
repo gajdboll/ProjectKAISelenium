@@ -19,10 +19,12 @@ public class AngelFishPage {
     public AngelFishPage(){//that driver can be removed too
                        PageFactory.initElements(DriverManager.getWebDriver(),this);
         }
-        public void clickOnLargeAngelFish(){
+        //void is repalced with CheckoutPage cause we will move to that page after
+        public CheckoutPage clickOnLargeAngelFish(){
             WaitForElement.waitUntilElementIsClickable(largeAngelFish);
              largeAngelFish.click();
              logger.info("Clicked on Angel Fish");
+             return new CheckoutPage();
         }
     }
 

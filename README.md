@@ -1,60 +1,86 @@
- Version1.7
-# ProjectKAISelenium - Sprint One -Version 1.7
+ 
+# ProjectKAISelenium - Sprint One -Version 1.10
 
-
-##  LOG4J Logging System
+## Version1.10 - Relative URL - Focus on Login Functionality - no navigation
 
 Acceptance Criteria
 
-add a dependency to the pom file
 
-<dependency>
-     <groupId>org.apache.logging.log4j</groupId>
-     <artifactId>log4j-core</artifactId>
-     <version>2.10.0</version>
- </dependency>
+Test sustainability
+It is very important in tests, especially automated, that:
 
-In the project localisation: scr/main/resources create a file log4j2.xml and paste that content to it
+- tests were carried out quickly,
+- were not susceptible to frequent changes, 
+- tested one specific functionality.
+Therefore, they should be short and goal-oriented (specific functionality). 
 
-<?xml version="1.0" encoding="UTF-8"?>
- <Configuration status="INFO">
-     <Appenders>
-         <Console name="console" target="SYSTEM_OUT">
-             <PatternLayout
-                     pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %C - %msg%n" />
-         </Console>
-     </Appenders>
-     <Loggers>
-         <Root level="debug" additivity="false">
-             <AppenderRef ref="console" />
-         </Root>
-     </Loggers>
- </Configuration>
+Analyzing our tests, we can safely conclude that their main goal is to test login on the 
+site. Do they then meet the first point?
+No, because switching from Landing Page to Login Page artificially lengthens them.
 
- src/main/resourcessrc/main/resourc
+In addition, if the "Enter the Store" or "Sign in" link stopped working due to an error or change, the tests will also stop working. Despite the fact that the login functionality itself could not change. In short, current tests are susceptible to change. They do not therefore comply with the second rule.
 
-If we want to use our logger and all the methods we need to start with (that's how we call for logger):private Logger logger = LogManager.getRootLogger();
+So how do you approach the matter?
 
-Logger have 3 methods:
+The answer to this question is very simple. To make our tests easier to maintain, we must apply the jumping / navigation practice directly to the functionality we test.
 
-logger.info("Information log");
- logger.warn("warning log");
- logger.error("error log");
+Example of relative URL implementation
+In order to implement relative URLs, we need to make changes to the project. First of all, from the TestBase class we have to get the URL of the application to another class, because we will stick to it the URI (acronym of Uniform Resource Locator) of individual pages. 
 
-!!!Create Logger in each POP class and attach information log inside each method to get more information when a certain method finishes !!!
+http://przyklady.javastart.pl/jpetstore/ + actions/Account.action?signonForm=
 
-more information about architecture etc. 
 
-https://logging.apache.org/log4j/2.0/manual/architecture.html
+Let's start by creating a new class called ApplicationURLs, which we will place in the navigation package (a new package must also be created). Project after creating the navigation package and adding the empty ApplicationURLs class:
 
-Official Log4j web
 
-https://logging.apache.org/log4j/2.x/
+After creating the new ApplicationURLs class, we need to move the URL from the TestBase class to the ApplicationURLs class as a constant. We will call this constant APPLICATION_URL.
+Then in the ApplicationURLs class, we need to create a new constant named LOGIN_URL, which will be a combination of the APPLICATION_URL constant with the URI of the login page, and so we have:
+package navigation;
 
-The Test should be stored in master as well as Version1.7 the branch on the global repository (remote)
+ public class ApplicationURLs {
+     public static final String APPLICATION_URL = "http://przyklady.javastart.pl/jpetstore/";
+     public static final String LOGIN_URL = APPLICATION_URL + "actions/Account.action?signonForm=";
+ }
+ We have all the necessary components to change the implementation of login tests. The tests will start with navigation to the tested functionality page, i.e. with:
+ 
+ DriverUtils.navigateToPage(LOGIN_URL);
+ 
+ package tests;
+ 
+ import driver.manager.DriverUtils;
+ import org.testng.annotations.Test;
+ import page.objects.LoginPage;
+ 
+ import static navigation.ApplicationURLs.LOGIN_URL;
+import static org.testng.AssertJUnit.assertEquals;
+ 
+ public class FailedLoginTests extends TestBase {
+ 
+     @Test
+     public void asUserTryToLogInWithIncorrectLoginAndPassword() {
+         DriverUtils.navigateToPage(LOGIN_URL);
+ 
+         LoginPage loginPage = new LoginPage();
+         loginPage
+                 .typeIntoUserNameField("NotExistingLogin")
+                 .typeIntoPasswordField("NotProperPassword")
+                 .clickOnLoginButton();
+         String warningMessage = loginPage.getWarningMessage();
+ 
+         assertEquals(warningMessage, "Invalid username or password. Signon failed.");
+     }
+ 
+ }
+ 
+ 
+Finally, the question remains as to the other functionality of the transition from LandingPage to LoginPage?
+
+The answer to this question is again very simple. To test whether the user can go from page to page, we should implement a new test whose purpose would be to test navigation, and more precisely the transition from LandingPage to LoginPage.
+
+
+
+
+
+The Test should be stored in master as well as Version1.10 the branch on the global repository (remote)
 
 The master branch should always contain the latest version of the project
-
-
-### ORIGINAL FRAMEWORK - KAI
-

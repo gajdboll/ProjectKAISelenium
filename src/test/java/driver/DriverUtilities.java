@@ -9,5 +9,6 @@ public class DriverUtilities {
     }
     public static void navigateToPage(String URL){
         DriverManager.getWebDriver().navigate().to(URL);
+        System.out.println("What is that");
     }
 }

@@ -1,33 +1,27 @@
 package Tests;
 
-import PageObjectPattern.EnterStore;
 import PageObjectPattern.LoginPage;
-import PageObjectPattern.SignInPageMainPage;
+import driver.DriverUtilities;
 import org.testng.annotations.Test;
 
+import static navigation.ApplicationURLs.LOGIN_URL;
 import static org.testng.Assert.assertEquals;
 
 public class InvalidLoginCredentials extends TestBase{
 
     @Test
     public void incorrectCredentialsInvalidLogin() {
-        //Clicks on "Enter the Store" - First Page
-        EnterStore enterStore = new EnterStore();//that (driver);can be removed after DriverManger Deployment
-        enterStore.clickOnEnterStoreLink();
-
-        //Clicks on "Sign In" - SEC page - this time we use our POP class
-        SignInPageMainPage signInPageMainPage = new SignInPageMainPage();//that (driver);can be removed after DriverManger Deployment
-        signInPageMainPage.clickOnSignInLink();
-
-        //Set up username and password and then Login- Third page
-        LoginPage loginPage = new LoginPage();//that (driver);can be removed after DriverManger Deployment
-        loginPage.enterLogin("Invalid Login");
-        loginPage.enterPassword("Invalid Password");
-        loginPage.clickLoginBtn();
-        //we will use that variable inside the assertion - methods d could be easly used inside the assertion but it is all about good practices
-        String warningText = loginPage.messageValidation();
+    //new way of moving to Login Page
+        DriverUtilities.navigateToPage(LOGIN_URL);
+        //fluent method changed
+        LoginPage loginPage= new LoginPage();
+                loginPage.enterLogin("invalid login")
+                .enterPassword("invalid pass")
+                .clickLoginBtn();
+        LoginPage loginPageAgain = new LoginPage();
         //Assertion
-        assertEquals(warningText, "Invalid username or password. Signon failed.");
+        assertEquals(loginPageAgain.messageValidation(), "Invalid username or password. Signon failed.");
+
 
     }
-   }
+}

@@ -24,35 +24,36 @@ public class LoginPage {
     public LoginPage(){//that driver can be removed too(WebDriver driver)
           PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
-    //enter login > modify that method - it become more generic so it can be use across all the tests
-    public void enterLogin(String loginStr) {
+    //void is replaced with LoginPage  cause we are staying on the same page (LoginPage)
+    public LoginPage enterLogin(String loginStr) {
         WaitForElement.waitUntilElementIsVisible(login);
         login.clear();// to be sure that field is empty
         login.sendKeys(loginStr);
         logger.info("Typed into User Name Field {}", loginStr);
+    return this;
     }
 
-    //enter password  > it become more generic so it can be use across all the tests
-    public void enterPassword(String pass) {
+    //void is replaced with LoginPage  cause we are staying on the same page (LoginPage)
+    public LoginPage enterPassword(String pass) {
         //WebElement password = driver.findElement(By.name("password")); that element and other is replaced by FindBy
         password.clear();// to be sure that field is empty
         password.sendKeys(pass);
         logger.info("Typed into Password Field {}", pass);
+    return this;
     }
-
-    //click Login button after all credentials are entered
-    public void clickLoginBtn() {
+//void is replaced with Footer Page  cause we are moving to next page (Footer page)
+    public FooterSignInPage clickLoginBtn() {
         loginBtn.click();
         logger.info("Clicked on Login Button");
+    return new FooterSignInPage();
     }
 
     //message occurs after login and is validated
     public String messageValidation() {
         logger.info("Warning text is : {}", messageAfterLogin.getText());
-        return messageAfterLogin.getText();
+        String messageValivdation = messageAfterLogin.getText();
+        return messageValivdation;
     }
-    public String meesageAfterCheckoutWithNoLogin(){
-        return messageAfterLogin.getText();
-    }
+
 
 }

@@ -1,11 +1,12 @@
-package Tests;
+package Tests.NavigationTests;
 
-import PageObjectPattern.*;
+import PageObjectPattern.EnterStore;
+import Tests.TestBase;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class SuccessfulChechoutFish extends TestBase{
+public class SuccessfulChechoutFish extends TestBase {
     /*
     1.Create Additional test case - Start from the same page (EnterStore page)
     2. Go to Main page (Sign In Page) and click on FISH quicklink (top of the page)
@@ -17,28 +18,43 @@ public class SuccessfulChechoutFish extends TestBase{
 
     @Test
     public void youMustSignInBeforeCheckoutMessage(){
+        //New way of presenting FluentWay
+        String messageValivdation = new EnterStore()
+        .clickOnEnterStoreLink()
+                .clickOnQuickLinkFish()
+                .clickOnAngelFishProduct()
+                .clickOnLargeAngelFish()
+                .clickOnCheckOutBtn()
+                .messageValidation();
+
+        assertEquals(messageValivdation,expectedMessage);
+ /*Old way of presenting test
 //enterstore page -> SignIn page
         EnterStore enterStore =new EnterStore();//that (driver);can be removed after DriverManger Deployment
         enterStore.clickOnEnterStoreLink();
 //SignInPage -> FishProduct
+
         SignInPageMainPage signInPageMainPage = new SignInPageMainPage();//that (driver);can be removed after DriverManger Deployment
         signInPageMainPage.clickOnQuickLinkFish();
 //FisfPage -> AngelFishPage
+
         FishProductPage fishProductPage = new FishProductPage();//that (driver);can be removed after DriverManger Deployment
         System.out.println(fishProductPage.angelFishText());
         fishProductPage.clickOnAngelFishProduct();
+
         //Angelfish -> CheckoutPage
         AngelFishPage angelFishPage = new AngelFishPage();//that (driver);can be removed after DriverManger Deployment
         angelFishPage.clickOnLargeAngelFish();
         //Checkout -> Sign In page
+
         CheckoutPage checkoutPage = new CheckoutPage();//that (driver);can be removed after DriverManger Deployment
         checkoutPage.clickOnCheckOutBtn();
         //Sign in page & validation
         LoginPage loginPage= new LoginPage();//that (driver);can be removed after DriverManger Deployment
-        String checkoutMessage =loginPage.meesageAfterCheckoutWithNoLogin();
+        String checkoutMessage =loginPage.messageValidation();
 
     assertEquals(checkoutMessage,expectedMessage);
 
-
+*/
     }
 }

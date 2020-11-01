@@ -1,5 +1,6 @@
 package driver.manager;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -12,7 +13,8 @@ public class BrowserFactory {
     public static WebDriver getBrowser(BrowserType browserType) {
         switch (browserType) {
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "C:/driver/chromedriver.exe");
+                WebDriverManager.chromedriver().setup();
+              //  System.setProperty("webdriver.chrome.driver", "C:/driver/chromedriver.exe");
                 return new ChromeDriver();
             case FIREFOX:
                 System.setProperty("webdriver.gecko.driver", "C:/driver/geckodriver.exe");

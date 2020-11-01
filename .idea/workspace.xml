@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment="Merge pull request #6 from gajdboll/Version1.10&#10;&#10;GitIgnore added as weel as new package with Highlight method&#10;Version1.10">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectKOneSelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectKOneSelenium.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/driver/manager/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driver/manager/BrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/driver/manager/BrowserFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/driver/manager/BrowserFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/driver/manager/BrowserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/driver/manager/BrowserFactory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="Version1.11" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -71,7 +80,7 @@
       <recent name="F:\SOGETI\KAI Project\K Kris\ProjectK1Selenium\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ValidLoginCredentials.positiveLoginTOTheStore">
+  <component name="RunManager" selected="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -101,6 +110,24 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvalidLoginCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ProjectKOneSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.InvalidLoginCredentials" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,44 +230,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ProjectKOneSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.SuccessfulChechoutFish" />
-      <option name="METHOD_NAME" value="youMustSignInBeforeCheckoutMessage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ProjectKOneSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.NavigationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.NavigationTests.SuccessfulChechoutFish" />
-      <option name="METHOD_NAME" value="youMustSignInBeforeCheckoutMessage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ValidLoginCredentials.positiveLoginTOTheStore" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ProjectKOneSelenium" />
       <extension name="coverage">
@@ -280,17 +269,17 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.SeleniumTestsK.myFirstTest" />
-      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" />
-      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" />
       <item itemvalue="TestNG.SuccessfulChechoutFish" />
       <item itemvalue="TestNG.NavigationToInvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
       <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
       <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
+      <item itemvalue="TestNG.InvalidLoginCredentials" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
         <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
+        <item itemvalue="TestNG.InvalidLoginCredentials" />
+        <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
         <item itemvalue="TestNG.SuccessfulChechoutFish" />
         <item itemvalue="TestNG.NavigationToInvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
       </list>
@@ -490,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604262283860</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Merge pull request #6 from gajdboll/Version1.10&#10;&#10;GitIgnore added as weel as new package with Highlight method&#10;Version1.10">
+      <created>1604262496085</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1604262496085</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -528,14 +524,30 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="299" y="0" key="CommitChangelistDialog2" timestamp="1604262281521">
+    <state x="299" y="0" key="CommitChangelistDialog2" timestamp="1604262493554">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="299" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604262281521" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604262292878">
+    <state x="299" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604262493554" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604263681732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604262292878" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604263681732" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604263681732">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604263681732" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604263681731">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604263681731" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604263681732">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604263681732" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604262505454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604262505454" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

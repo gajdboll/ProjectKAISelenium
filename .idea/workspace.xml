@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment=" Fluent Interface">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HELPER/Highlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectKOneSelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectKOneSelenium.iml" afterDir="false" />
+    <list default="true" id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment="Merge pull request #6 from gajdboll/Version1.10&#10;&#10;GitIgnore added as weel as new package with Highlight method&#10;Version1.10">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="KG" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -469,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594589384234</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Merge pull request #6 from gajdboll/Version1.10&#10;&#10;GitIgnore added as weel as new package with Highlight method&#10;Version1.10">
+      <created>1604260939909</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1604260939909</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -485,7 +492,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="First basic test&#10;&#10;Testing hot to commit and push the project to git" />
     <MESSAGE value="First basic test&#10;&#10;&#10;With Eclipse export" />
@@ -503,81 +509,19 @@
     <MESSAGE value="Fluent Interface" />
     <MESSAGE value="changes reverted - all working - before Fluent Interface" />
     <MESSAGE value=" Fluent Interface" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Fluent Interface" />
+    <MESSAGE value="Merge pull request #6 from gajdboll/Version1.10&#10;&#10;GitIgnore added as weel as new package with Highlight method&#10;Version1.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge pull request #6 from gajdboll/Version1.10&#10;&#10;GitIgnore added as weel as new package with Highlight method&#10;Version1.10" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="331" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594760822493">
+    <state x="299" y="0" key="CommitChangelistDialog2" timestamp="1604260936816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="331" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1594760822493" />
-    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594545876864">
+    <state x="299" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604260936816" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604262135416">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1594545876864" />
-    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1594589380731">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594589380731" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1594587540182">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1594587540182" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1594761684293">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594761684293" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1594761684292">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594761684292" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1594761684292">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594761684292" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1594761684293">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594761684293" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1594589201203">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594589201203" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1594589201202">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594589201202" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1594589201202">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594589201202" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1594589201203">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594589201203" />
-    <state x="54" y="3" key="SettingsEditor" timestamp="1594668394848">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="54" y="3" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594668394848" />
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1594589424472">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594589424472" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1594589120241">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1594589120241" />
-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594587540157">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1594587540157" />
-    <state x="385" y="152" key="git4idea.merge.GitPullDialog" timestamp="1594587431339">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="385" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1594587431339" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1594582713239">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1594582713239" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604262135416" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

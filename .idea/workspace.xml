@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6ea0a7aa-f247-49f2-9da9-317e55a9e6be" name="Default" comment=" Fluent Interface">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/NavigationTests/NavigationToInvalidLoginCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/navigation/ApplicationURLs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HELPER/Highlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_10_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InvalidLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InvalidLoginCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/SuccessfulChechoutFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/NavigationTests/SuccessfulChechoutFish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ValidLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ValidLoginCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/InvalidLoginCredentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/InvalidLoginCredentials.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/SuccessfulChechoutFish.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectKOneSelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectKOneSelenium.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +31,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Version1.9" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition_Newest\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1eYUV9FAv1WmlYP6YQAKlICjlTG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -47,6 +53,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="local history&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -157,32 +164,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTestsK.myFirstTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="SeleniumTestsK.myFirstTest" type="TestNG" nameIsGenerated="true">
       <module name="ProjectKOneSelenium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SeleniumTestsK" />
       <option name="METHOD_NAME" value="myFirstTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
-      <envs />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SuccessfulChechoutFish" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ProjectKOneSelenium" />
@@ -279,7 +280,8 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.SeleniumTestsK.myFirstTest" />
-      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (2)" />
+      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage" />
+      <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (1)" />
       <item itemvalue="TestNG.SuccessfulChechoutFish" />
       <item itemvalue="TestNG.NavigationToInvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
       <item itemvalue="TestNG.ValidLoginCredentials.positiveLoginTOTheStore" />
@@ -291,10 +293,10 @@
         <item itemvalue="TestNG.InvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
         <item itemvalue="TestNG.SuccessfulChechoutFish" />
         <item itemvalue="TestNG.NavigationToInvalidLoginCredentials.incorrectCredentialsInvalidLogin" />
-        <item itemvalue="TestNG.SuccessfulChechoutFish.youMustSignInBeforeCheckoutMessage (2)" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
